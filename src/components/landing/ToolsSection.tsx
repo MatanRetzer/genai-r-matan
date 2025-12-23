@@ -1,16 +1,23 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import chatgptLogo from '@/assets/tools/chatgpt.svg';
+import claudeLogo from '@/assets/tools/claude.svg';
+import notebookLmLogo from '@/assets/tools/notebooklm.svg';
+import aiAgentsLogo from '@/assets/tools/ai-agents.png';
+import copilotLogo from '@/assets/tools/copilot.png';
+import gammaLogo from '@/assets/tools/gamma.png';
+import vibeCodingLogo from '@/assets/tools/vibe-coding.png';
 
 const ToolsSection = () => {
   const { t, isRTL } = useLanguage();
 
   const tools = [
-    'ChatGPT',
-    'Claude',
-    'NotebookLM',
-    'AI Agents',
-    'Copilot',
-    'Gamma',
-    'Vibe Coding / BASE44',
+    { name: 'ChatGPT', logo: chatgptLogo },
+    { name: 'Claude', logo: claudeLogo },
+    { name: 'NotebookLM', logo: notebookLmLogo },
+    { name: 'AI Agents', logo: aiAgentsLogo },
+    { name: 'Copilot', logo: copilotLogo },
+    { name: 'Gamma', logo: gammaLogo },
+    { name: 'Vibe Coding / BASE44', logo: vibeCodingLogo },
   ];
 
   const description = isRTL 
@@ -27,14 +34,19 @@ const ToolsSection = () => {
           {t('tools.title')}
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-8">
+        <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto mb-8">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="px-6 py-3 rounded-lg bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-default group"
+              className="flex flex-col items-center gap-3 px-6 py-4 rounded-xl bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-default group min-w-[120px]"
             >
-              <span className="text-lg font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                {tool}
+              <img 
+                src={tool.logo} 
+                alt={`${tool.name} logo`} 
+                className="w-12 h-12 object-contain"
+              />
+              <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors text-center">
+                {tool.name}
               </span>
             </div>
           ))}
