@@ -1,3 +1,5 @@
+# GenAI-R Consulting Website
+
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +14,9 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://genai-r.com/sitemap.xml
+
+# Crawl delay for all bots
+Crawl-delay: 1
