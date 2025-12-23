@@ -46,10 +46,13 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Quote */}
-          <blockquote className="text-primary italic text-center border-s-2 border-primary ps-4 max-w-2xl mx-auto">
-            {t('about.quote')}
-          </blockquote>
+          {/* Vision */}
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-primary font-semibold">{t('about.vision.label')}</span>
+            <blockquote className="text-primary italic mt-2">
+              {t('about.vision')}
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
