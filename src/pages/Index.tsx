@@ -10,6 +10,7 @@ const AboutSection = lazy(() => import('@/components/landing/AboutSection'));
 const ServicesSection = lazy(() => import('@/components/landing/ServicesSection'));
 const ApproachSection = lazy(() => import('@/components/landing/ApproachSection'));
 const ToolsSection = lazy(() => import('@/components/landing/ToolsSection'));
+const TestimonialsSection = lazy(() => import('@/components/landing/TestimonialsSection'));
 const AudiencesSection = lazy(() => import('@/components/landing/AudiencesSection'));
 const CTASection = lazy(() => import('@/components/landing/CTASection'));
 
@@ -86,6 +87,9 @@ const LandingContent = () => {
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <ToolsSection />
+          </Suspense>
+          <Suspense fallback={<SectionLoader />}>
+            <TestimonialsSection />
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <AudiencesSection />
