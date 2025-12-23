@@ -29,7 +29,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.experience.text': 'מהנדס בינה מלאכותית עם ניסיון של למעלה מעשור בתחומי AI ו-Data Science. מוביל תחום GenAI ומטמיע סוכני AI בחברה גלובלית גדולה, עם מעל 3 שנות ניסיון בהטמעת בינה מלאכותית יוצרת בארגונים.',
     'about.clients.text': 'מוביל תחום AI Agents בחברת אנטרפרייז גלובלית, מרצה ויועץ AI של התנועה הקיבוצית, יועץ לחברות אדריכלים והנדסה מהגדולות בישראל, חברות ביטוח, וכן מרצה ויועץ בתחום AI לחברת Precise ולקוחות נוספים.',
     'about.specialty': 'התמחותי היא הנגשת טכנולוגיות מתקדמות לצוותים לא-טכניים ופיתוח פתרונות מותאמים לצרכים עסקיים אמיתיים.',
-    'about.quote': '"אני מאמין שכל מנהל או בעל עסק צריך להכיר את הכלים והאפשרויות שבינה מלאכותית יוצרת מביאה לשולחן."',
+    'about.vision.label': 'החזון שלי:',
+    'about.vision': '"להפוך כל אדם ועסק ליעילים ומצליחים יותר באמצעות שימוש פשוט וטבעי בכלי בינה מלאכותית."',
     
     // Services
     'services.title': 'שירותים',
@@ -95,7 +96,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.experience.text': 'AI Engineer with over a decade of experience in AI and Data Science. Leading GenAI domain and implementing AI agents in a large global company, with over 3 years of experience implementing generative AI in organizations.',
     'about.clients.text': 'Leading AI Agents domain at a global enterprise company, AI lecturer and consultant for the Kibbutz Movement, consultant for leading architecture and engineering firms in Israel, insurance companies, and AI lecturer and consultant for Precise and other clients.',
     'about.specialty': 'My specialty is making advanced technologies accessible to non-technical teams and developing solutions tailored to real business needs.',
-    'about.quote': '"I believe every manager or business owner should know the tools and possibilities that generative AI brings to the table."',
+    'about.vision.label': 'My Vision:',
+    'about.vision': '"To make every person and business more efficient and successful through simple and natural use of AI tools."',
     
     // Services
     'services.title': 'Services',
