@@ -74,6 +74,10 @@ const HeroSection = () => {
               </a>
             </Button>
           </div>
+
+          <p className="text-muted-foreground text-base sm:text-lg mt-6 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+            {t('hero.cta.tagline')}
+          </p>
         </div>
       </div>
     </section>

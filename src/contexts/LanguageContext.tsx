@@ -22,6 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle': 'ייעוץ, הדרכה והטמעה של בינה מלאכותית יוצרת – להפוך את החלום למציאות',
     'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
+    'hero.cta.tagline': 'אני כאן כדי לעזור לכם לאמץ את הבינה המלאכותית – בקלות ובביטחון',
     
     // About
     'about.title': 'מי אני',
@@ -99,6 +100,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle': 'Consulting, training and implementation of generative AI – turning dreams into reality',
     'hero.cta.whatsapp': 'Free GenAI Discovery Call',
     'hero.cta.linkedin': 'LinkedIn',
+    'hero.cta.tagline': "I'm here to help you embrace AI – easily and confidently",
     
     // About
     'about.title': 'About Me',
