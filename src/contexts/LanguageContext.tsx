@@ -22,7 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle': 'אני כאן כדי לעזור לכם להשתמש בכלי הבינה המלאכותית ביעילות בחיי היומיום ובעבודה',
     'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
-    'hero.cta.tagline': '',
+    'hero.cta.tagline': 'אני כאן כדי לעזור לכם לאמץ את הבינה המלאכותית – בקלות ובביטחון',
     
     // About
     'about.title': 'מי אני',
