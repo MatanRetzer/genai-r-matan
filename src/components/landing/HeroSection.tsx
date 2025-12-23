@@ -38,7 +38,7 @@ const HeroSection = () => {
           <img 
             src={logo} 
             alt="GenAI-R Logo" 
-            className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 drop-shadow-lg"
+            className="w-72 h-72 md:w-96 md:h-96 mx-auto mb-6 drop-shadow-lg"
           />
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
