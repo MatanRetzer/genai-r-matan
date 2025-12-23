@@ -25,6 +25,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // About
     'about.title': 'מי אני',
+    'about.name': 'מתן רצר',
     'about.intro': 'בעל תואר שני וניסיון מעמיק בבינה מלאכותית ולמידת מכונה, משתף פעולה עם עסקים לפתיחת אפשרויות חדשות בעזרת חדשנות GenAI. מסייע לעסקים למנף בינה מלאכותית לשיפור תהליכים, העלאת יעילות, והנעת צמיחה.',
     'about.experience.text': 'מהנדס בינה מלאכותית עם ניסיון של למעלה מעשור בתחומי AI ו-Data Science. מוביל תחום GenAI ומטמיע סוכני AI בחברה גלובלית גדולה, עם מעל 3 שנות ניסיון בהטמעת בינה מלאכותית יוצרת בארגונים.',
     'about.clients.text': 'מוביל תחום AI Agents בחברת אנטרפרייז גלובלית, מרצה ויועץ AI של התנועה הקיבוצית, יועץ לחברות אדריכלים והנדסה מהגדולות בישראל, חברות ביטוח, וכן מרצה ויועץ בתחום AI לחברת Precise ולקוחות נוספים.',
@@ -92,6 +93,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // About
     'about.title': 'About Me',
+    'about.name': 'Matan Retzer',
     'about.intro': 'Holding a Master\'s degree with deep experience in AI and machine learning, I collaborate with businesses to unlock new possibilities through GenAI innovation. I help businesses leverage AI to improve processes, increase efficiency, and drive growth.',
     'about.experience.text': 'AI Engineer with over a decade of experience in AI and Data Science. Leading GenAI domain and implementing AI agents in a large global company, with over 3 years of experience implementing generative AI in organizations.',
     'about.clients.text': 'Leading AI Agents domain at a global enterprise company, AI lecturer and consultant for the Kibbutz Movement, consultant for leading architecture and engineering firms in Israel, insurance companies, and AI lecturer and consultant for Precise and other clients.',
