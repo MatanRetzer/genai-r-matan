@@ -27,10 +27,15 @@ const AboutSection = () => {
               </div>
             </div>
             
-            {/* Intro Text */}
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center md:text-start">
-              {t('about.intro')}
-            </p>
+            {/* Name & Intro Text */}
+            <div className="flex flex-col gap-2">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary text-center md:text-start">
+                {t('about.name')}
+              </h3>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center md:text-start">
+                {t('about.intro')}
+              </p>
+            </div>
           </div>
 
           {/* Details */}
