@@ -20,7 +20,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.title': 'GenAI Consulting שמייצר תוצאות עסקיות',
     'hero.subtitle': 'ייעוץ, תכנון והטמעה של בינה מלאכותית יוצרת – מהחזון ועד הביצוע',
-    'hero.cta.whatsapp': 'ייעוץ GenAI חינם',
+    'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
     
     // About
@@ -82,7 +82,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // CTA
     'cta.title': 'רוצה לבדוק איך GenAI יכול לעבוד בשבילך?',
-    'cta.button': 'קבע ייעוץ GenAI חינם',
+    'cta.button': 'שיחת איפיון GenAI חינם',
     
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
@@ -97,7 +97,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.title': 'GenAI Consulting that Delivers Business Results',
     'hero.subtitle': 'Consulting, planning and implementation of generative AI – from vision to execution',
-    'hero.cta.whatsapp': 'Free GenAI Consultation',
+    'hero.cta.whatsapp': 'Free GenAI Discovery Call',
     'hero.cta.linkedin': 'LinkedIn',
     
     // About
@@ -159,7 +159,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // CTA
     'cta.title': 'Want to see how GenAI can work for you?',
-    'cta.button': 'Schedule Free GenAI Consultation',
+    'cta.button': 'Free GenAI Discovery Call',
     
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
