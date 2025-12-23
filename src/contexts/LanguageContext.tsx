@@ -47,8 +47,9 @@ const translations: Record<Language, Record<string, string>> = {
     'services.implementation.desc': 'תרגול מעשי על מקרים אמיתיים מהעבודה או מחיי היום-יום של המשתתפים. הרמת רמת הידע לכל אחד.',
     
     // Tools
-    'tools.title': 'כלים ומומחיות',
-    
+    'tools.title': 'הכלים שאני מלמד',
+    'tools.intro': 'אני מתמחה בהכשרה מעמיקה על מגוון רחב של כלי בינה מלאכותית מובילים בתעשייה, במטרה להעצים יחידים ועסקים כאחד. ההדרכות מותאמות באופן אישי, ומאפשרות למשתתפים לרכוש ידע וכישורים מעשיים בשימוש יעיל ומושכל בטכנולוגיות המתקדמות ביותר הקיימות כיום בשוק ה-AI.',
+
     // Approach
     'approach.title': 'הגישה שלי',
     'approach.intro': 'אני מאמין בלמידה דרך עשייה - כל הדרכה כוללת תרגול מעשי על מקרים אמיתיים מהעבודה או מחיי היומיום של המשתתפים. אני מתאים את שיטת ההוראה לרמת הידע של כל קהל, מאנשים ללא רקע טכני ועד למפתחים מנוסים. הדגש הוא על יישום מיידי - המשתתפים לומדים בדיוק איך להשתמש בכלי AI כדי לחסוך זמן, לשפר תוצרים ולהגביר את הפרודוקטיביות האישית והארגונית באופן מדיד.',
@@ -115,8 +116,9 @@ const translations: Record<Language, Record<string, string>> = {
     'services.implementation.desc': 'Practical exercises on real cases from work or participants\' daily lives. Elevating knowledge level for everyone.',
     
     // Tools
-    'tools.title': 'Tools & Expertise',
-    
+    'tools.title': 'The Tools I Teach',
+    'tools.intro': 'I specialize in in-depth training on a wide range of industry-leading AI tools, with the goal of empowering individuals and businesses alike. Training is personalized, enabling participants to acquire practical knowledge and skills in efficient and informed use of the most advanced technologies available in the AI market today.',
+
     // Approach
     'approach.title': 'My Approach',
     'approach.intro': 'I believe in learning by doing - every training includes hands-on practice on real cases from work or daily life. I adapt my teaching method to each audience\'s knowledge level, from non-technical people to experienced developers. The emphasis is on immediate implementation - participants learn exactly how to use AI tools to save time, improve outputs and boost personal and organizational productivity measurably.',

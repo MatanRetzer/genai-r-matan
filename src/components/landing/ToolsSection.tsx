@@ -20,19 +20,19 @@ const ToolsSection = () => {
     { name: 'Vibe Coding / BASE44', logo: vibeCodingLogo },
   ];
 
-  const description = isRTL 
-    ? 'המטרה המרכזית של כל הדרכה היא להבטיח שכל מדרג יוכל לצאת עם היכולת להשתמש בכלי אלה בקלות ובטבעיות, לשלב בעבודה וביום-יום בפעילויות, ובכך לקסום את הפרודוקטיביות שלו.'
-    : 'The central goal of every training is to ensure that every level can leave with the ability to use these tools easily and naturally, integrate them into work and daily activities, and thereby maximize their productivity.';
-
   return (
     <section id="tools" className="py-24 relative" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-[100px]" />
       
       <div className="container relative z-10 mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gradient">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gradient">
           {t('tools.title')}
         </h2>
+        
+        <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12">
+          {t('tools.intro')}
+        </p>
 
         <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto mb-8">
           {tools.map((tool, index) => (
@@ -51,10 +51,6 @@ const ToolsSection = () => {
             </div>
           ))}
         </div>
-        
-        <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          {description}
-        </p>
       </div>
     </section>
   );
