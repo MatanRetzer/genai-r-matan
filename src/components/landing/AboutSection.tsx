@@ -35,9 +35,14 @@ const AboutSection = () => {
             </div>
             
             {/* About Text */}
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center md:text-start">
-              {t('about.text')}
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center md:text-start">
+                {t('about.text')}
+              </p>
+              <blockquote className="text-primary italic text-center md:text-start border-s-2 border-primary ps-4">
+                {t('about.quote')}
+              </blockquote>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
