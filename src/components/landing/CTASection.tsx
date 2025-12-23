@@ -6,8 +6,8 @@ import AnimatedSection from './AnimatedSection';
 const CTASection = () => {
   const { t, isRTL } = useLanguage();
 
-  // Placeholder link - easily editable
-  const WHATSAPP_LINK = 'https://wa.me/972000000000';
+  // WhatsApp link
+  const WHATSAPP_LINK = 'https://wa.me/972524538121?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9E%D7%AA%D7%9F%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%94AI%20%D7%A9%D7%90%D7%AA%D7%94%20%D7%9E%D7%A6%D7%99%D7%A2.%20%D7%A0%D7%95%D7%9B%D7%9C%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%99%D7%A4%D7%99%D7%95%D7%9F%20%D7%A7%D7%A6%D7%A8%D7%94%3F';
 
   return (
     <section id="contact" className="py-20 md:py-24 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
