@@ -26,12 +26,21 @@ const translations: Record<Language, Record<string, string>> = {
     // About
     'about.title': 'מי אני',
     'about.name': 'מתן רטצר',
-    'about.intro': 'בעל תואר שני וניסיון מעמיק בבינה מלאכותית ולמידת מכונה, משתף פעולה עם עסקים לפתיחת אפשרויות חדשות בעזרת חדשנות GenAI. מסייע לעסקים למנף בינה מלאכותית לשיפור תהליכים, העלאת יעילות, והנעת צמיחה.',
-    'about.experience.text': 'מהנדס בינה מלאכותית עם ניסיון של למעלה מעשור בתחומי AI ו-Data Science. מוביל תחום GenAI ומטמיע סוכני AI בחברה גלובלית גדולה, עם מעל 3 שנות ניסיון בהטמעת בינה מלאכותית יוצרת בארגונים.',
-    'about.clients.text': 'מוביל תחום AI Agents בחברת אנטרפרייז גלובלית, מרצה ויועץ AI של התנועה הקיבוצית, יועץ לחברות אדריכלים והנדסה מהגדולות בישראל, חברות ביטוח, וכן מרצה ויועץ בתחום AI לחברת Precise ולקוחות נוספים.',
-    'about.specialty': 'התמחותי היא הנגשת טכנולוגיות מתקדמות לצוותים לא-טכניים ופיתוח פתרונות מותאמים לצרכים עסקיים אמיתיים.',
+    'about.subtitle': 'יועץ ומרצה GenAI',
+    'about.intro': 'בעל תואר שני וניסיון מעמיק בבינה מלאכותית ולמידת מכונה. משתף פעולה עם עסקים לפתיחת אפשרויות חדשות ומסייע למנף AI לשיפור תהליכים, העלאת יעילות והנעת צמיחה.',
+    'about.experience': 'מהנדס AI עם ניסיון של למעלה מעשור בתחומי AI ו-Data Science. מוביל תחום GenAI ומטמיע סוכני AI בחברה גלובלית, עם מעל 3 שנות ניסיון בהטמעת בינה מלאכותית יוצרת.',
+    'about.clients': 'מוביל AI Agents בחברת אנטרפרייז גלובלית, מרצה ויועץ AI של התנועה הקיבוצית, יועץ לחברות אדריכלים והנדסה מהגדולות בישראל, חברות ביטוח, ומרצה ויועץ AI לחברת Precise ולקוחות נוספים.',
+    'about.specialty': 'מתמחה בהנגשת טכנולוגיות מתקדמות לצוותים לא-טכניים ופיתוח פתרונות מותאמים לצרכים עסקיים אמיתיים.',
     'about.vision.label': 'החזון שלי:',
     'about.vision': '"להפוך כל אדם ועסק ליעילים ומצליחים יותר באמצעות שימוש פשוט וטבעי בכלי בינה מלאכותית."',
+    // Expertise cards
+    'about.expertise.title': 'תחומי התמחות',
+    'about.expertise.experience.title': 'מעל 10 שנות ניסיון',
+    'about.expertise.experience.desc': 'ב-AI, ML ושינוי עסקי מבוסס נתונים',
+    'about.expertise.development.title': 'התמחות בפיתוח',
+    'about.expertise.development.desc': 'פתרונות GenAI, ייעוץ טכנולוגי ויישום, פיתוח אפליקציות',
+    'about.expertise.training.title': 'מרצה מנוסה',
+    'about.expertise.training.desc': 'הדרכה והרצאות מעשיות לקהלים טכניים ולא טכניים',
     
     // Services
     'services.title': 'שירותים',
@@ -94,12 +103,21 @@ const translations: Record<Language, Record<string, string>> = {
     // About
     'about.title': 'About Me',
     'about.name': 'Matan Retzer',
-    'about.intro': 'Holding a Master\'s degree with deep experience in AI and machine learning, I collaborate with businesses to unlock new possibilities through GenAI innovation. I help businesses leverage AI to improve processes, increase efficiency, and drive growth.',
-    'about.experience.text': 'AI Engineer with over a decade of experience in AI and Data Science. Leading GenAI domain and implementing AI agents in a large global company, with over 3 years of experience implementing generative AI in organizations.',
-    'about.clients.text': 'Leading AI Agents domain at a global enterprise company, AI lecturer and consultant for the Kibbutz Movement, consultant for leading architecture and engineering firms in Israel, insurance companies, and AI lecturer and consultant for Precise and other clients.',
-    'about.specialty': 'My specialty is making advanced technologies accessible to non-technical teams and developing solutions tailored to real business needs.',
+    'about.subtitle': 'GenAI Consultant & Lecturer',
+    'about.intro': 'Holding a Master\'s degree with deep experience in AI and machine learning. I collaborate with businesses to unlock new possibilities and help leverage AI to improve processes, increase efficiency, and drive growth.',
+    'about.experience': 'AI Engineer with over a decade of experience in AI and Data Science. Leading GenAI domain and implementing AI agents in a large global company, with over 3 years of experience implementing generative AI.',
+    'about.clients': 'Leading AI Agents at a global enterprise, AI lecturer and consultant for the Kibbutz Movement, consultant for leading architecture and engineering firms in Israel, insurance companies, and AI consultant for Precise and other clients.',
+    'about.specialty': 'Specializing in making advanced technologies accessible to non-technical teams and developing solutions tailored to real business needs.',
     'about.vision.label': 'My Vision:',
     'about.vision': '"To make every person and business more efficient and successful through simple and natural use of AI tools."',
+    // Expertise cards
+    'about.expertise.title': 'Expertise Areas',
+    'about.expertise.experience.title': '10+ Years Experience',
+    'about.expertise.experience.desc': 'In AI, ML and data-driven business transformation',
+    'about.expertise.development.title': 'Development Expertise',
+    'about.expertise.development.desc': 'GenAI solutions, technology consulting & implementation, app development',
+    'about.expertise.training.title': 'Experienced Lecturer',
+    'about.expertise.training.desc': 'Practical training and lectures for technical and non-technical audiences',
     
     // Services
     'services.title': 'Services',
