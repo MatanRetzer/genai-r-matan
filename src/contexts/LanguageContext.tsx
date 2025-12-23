@@ -33,18 +33,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Services
     'services.title': 'שירותים',
-    'services.strategy.title': 'פיתוח אסטרטגיות GenAI מותאמות',
-    'services.strategy.desc': 'פיתוח אסטרטגיות בינה מלאכותית מקצה לקצה. התאמה אישית לכל צורך עסקי. פיתוח אפליקציות בעזרת Vibe Coding.',
-    'services.consulting.title': 'ייעוץ טכנולוגי GenAI לצוותים לא-טכניים',
-    'services.consulting.desc': 'הנגשת בינה מלאכותית לכל מדרג. תוך הנגשת הכלים לדרג הניהול והביצוע, מפה, מסלול ויישום מעשי לחברות ולמנהלים.',
-    'services.training.title': 'הרצאות וסדנאות יישומיות',
-    'services.training.desc': 'הרצאות עשירות וסדנאות מותאמות לצרכי הארגון שלך. המשתתפים יוצאים עם ידע מעשי שניתן ליישם מיד בעבודה היומיומית.',
-    'services.mentoring.title': 'הדרכות והנטורינג אישיות',
-    'services.mentoring.desc': 'ליווי אישי לצוותים ולמנהלים. למידה מידיים של שימוש מעשי בכלי AI, כדי לחסוך זמן, לשפר תוצרים ולהגביר את הפרודוקטיביות האישית והעסקית.',
-    'services.agents.title': 'סוכני AI ואוטומציות',
-    'services.agents.desc': 'פיתוח סוכני AI חכמים לייעול תהליכים עסקיים. אוטומציות מותאמות אישית לחיסוך זמן ומשאבים.',
-    'services.implementation.title': 'יישום מידיי ותוצאות מדידות',
-    'services.implementation.desc': 'תרגול מעשי על מקרים אמיתיים מהעבודה או מחיי היום-יום של המשתתפים. הרמת רמת הידע לכל אחד.',
+    'services.solutions.title': 'פיתוח פתרונות GenAI מותאמים',
+    'services.solutions.desc': 'פיתוח פתרונות בינה מלאכותית מקצה לקצה. התאמה אישית לכל צורך עסקי. פיתוח אפליקציות בעזרת Vibe Coding.',
+    'services.consulting.title': 'ייעוץ GenAI טכנולוגי לצוותים לא טכניים',
+    'services.consulting.desc': 'הנגשת בינה מלאכותית לכל דורש. תוך הנגשת הכלים להגברת היעילות. אסטרטגיה, מפת דרכים וליווי מעשי למנהלים ולצוותים.',
+    'services.training.title': 'הרצאות וסדנאות',
+    'services.training.desc': 'הרצאות מעשירות וסדנאות יישומיות המותאמות לצרכי הארגון שלך. המשתתפים יוצאים עם ידע מעשי שניתן ליישם מיד בעבודה היומיומית.',
+    'services.mentoring.title': 'הדרכות אישיות ומנטורינג',
+    'services.mentoring.desc': 'ליווי מותאם אישית לצוותים ולפרטיים. למידה מעשית של כלי AI שימושיים לארגון ולחיי היום-יום לשיפור הפרודוקטיביות האישית והעסקית.',
+
     
     // Tools
     'tools.title': 'הכלים שאני מלמד',
@@ -102,18 +99,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Services
     'services.title': 'Services',
-    'services.strategy.title': 'Custom GenAI Strategy Development',
-    'services.strategy.desc': 'End-to-end AI strategy development. Personalized for every business need. Application development with Vibe Coding.',
+    'services.solutions.title': 'Custom GenAI Solutions Development',
+    'services.solutions.desc': 'End-to-end AI solutions development. Personalized for every business need. Application development with Vibe Coding.',
     'services.consulting.title': 'GenAI Consulting for Non-Technical Teams',
-    'services.consulting.desc': 'Making AI accessible at every level. Bringing tools to management and execution levels, with roadmap, path and practical implementation for companies and managers.',
-    'services.training.title': 'Lectures & Practical Workshops',
-    'services.training.desc': 'Rich lectures and workshops tailored to your organization\'s needs. Participants leave with practical knowledge applicable immediately in daily work.',
+    'services.consulting.desc': 'Making AI accessible to everyone. Providing tools for increased efficiency. Strategy, roadmap and practical guidance for managers and teams.',
+    'services.training.title': 'Lectures & Workshops',
+    'services.training.desc': 'Enriching lectures and practical workshops tailored to your organization\'s needs. Participants leave with practical knowledge applicable immediately in daily work.',
     'services.mentoring.title': 'Personal Training & Mentoring',
-    'services.mentoring.desc': 'Personal guidance for teams and managers. Hands-on learning of AI tools to save time, improve outputs and boost personal and business productivity.',
-    'services.agents.title': 'AI Agents & Automation',
-    'services.agents.desc': 'Smart AI agent development for business process optimization. Custom automation to save time and resources.',
-    'services.implementation.title': 'Immediate Implementation & Measurable Results',
-    'services.implementation.desc': 'Practical exercises on real cases from work or participants\' daily lives. Elevating knowledge level for everyone.',
+    'services.mentoring.desc': 'Personalized guidance for teams and individuals. Practical learning of useful AI tools for organizations and daily life to improve personal and business productivity.',
+
     
     // Tools
     'tools.title': 'The Tools I Teach',

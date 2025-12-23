@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Lightbulb, Bot, GraduationCap, Users, Zap, Target } from 'lucide-react';
+import { Lightbulb, Users, GraduationCap, Target } from 'lucide-react';
 
 const ServicesSection = () => {
   const { t, isRTL } = useLanguage();
@@ -7,8 +7,8 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Lightbulb,
-      title: t('services.strategy.title'),
-      description: t('services.strategy.desc'),
+      title: t('services.solutions.title'),
+      description: t('services.solutions.desc'),
     },
     {
       icon: Users,
@@ -25,16 +25,6 @@ const ServicesSection = () => {
       title: t('services.mentoring.title'),
       description: t('services.mentoring.desc'),
     },
-    {
-      icon: Bot,
-      title: t('services.agents.title'),
-      description: t('services.agents.desc'),
-    },
-    {
-      icon: Zap,
-      title: t('services.implementation.title'),
-      description: t('services.implementation.desc'),
-    },
   ];
 
   return (
@@ -44,21 +34,21 @@ const ServicesSection = () => {
           {t('services.title')}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group card-gradient p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-500 hover:glow-box"
+              className="group card-gradient p-8 rounded-xl border border-border hover:border-primary/50 transition-all duration-500 hover:glow-box"
             >
-              <div className="flex flex-col items-center text-center gap-4">
+              <div className="flex items-start gap-5">
                 <div className="shrink-0 w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
                 </div>
