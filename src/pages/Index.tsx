@@ -6,6 +6,8 @@ import HeroSection from '@/components/landing/HeroSection';
 import AboutSection from '@/components/landing/AboutSection';
 import ServicesSection from '@/components/landing/ServicesSection';
 import ToolsSection from '@/components/landing/ToolsSection';
+import ApproachSection from '@/components/landing/ApproachSection';
+import AudiencesSection from '@/components/landing/AudiencesSection';
 import CTASection from '@/components/landing/CTASection';
 import Footer from '@/components/landing/Footer';
 
@@ -47,7 +49,9 @@ const LandingContent = () => {
           <HeroSection />
           <AboutSection />
           <ServicesSection />
+          <ApproachSection />
           <ToolsSection />
+          <AudiencesSection />
           <CTASection />
         </main>
         <Footer />

@@ -49,16 +49,31 @@ const translations: Record<Language, Record<string, string>> = {
     // Tools
     'tools.title': 'כלים ומומחיות',
     
-    // CTA
-    'cta.title': 'רוצה לבדוק איך GenAI יכול לעבוד בשבילך?',
-    'cta.subtitle': 'ההדרכות והייעוץ מתמקדים בהנגשת מגוון רחב של כלי הבינה המלאכותית לעסקים:',
-    'cta.button': 'קבע ייעוץ GenAI חינם',
+    // Approach
+    'approach.title': 'הגישה שלי',
+    'approach.intro': 'אני מאמין בלמידה דרך עשייה - כל הדרכה כוללת תרגול מעשי על מקרים אמיתיים מהעבודה או מחיי היומיום של המשתתפים. אני מתאים את שיטת ההוראה לרמת הידע של כל קהל, מאנשים ללא רקע טכני ועד למפתחים מנוסים. הדגש הוא על יישום מיידי - המשתתפים לומדים בדיוק איך להשתמש בכלי AI כדי לחסוך זמן, לשפר תוצרים ולהגביר את הפרודוקטיביות האישית והארגונית באופן מדיד.',
+    'approach.learning.title': 'למידה מבוססת עשייה',
+    'approach.learning.desc': 'תרגול מעשי על מקרים אמיתיים מחיי העבודה והיום-יום.',
+    'approach.personalized.title': 'התאמה אישית',
+    'approach.personalized.desc': 'שיטת הוראה המותאמת לרמת הידע ולצרכים הייחודיים של כל קהל.',
+    'approach.results.title': 'יישום מיידי ותוצאות מדידות',
+    'approach.results.desc': 'שימוש מעשי בכלים כדי לחסוך זמן, לשפר תוצרים ולהגביר פרודוקטיביות.',
     
     // Target Audiences
-    'audiences.business': 'עסקים בצמיחה: המעוניינים לנצל את טכנולוגיות הבינה המלאכותית לצמיחה עסקית, פיתוח מוצרים חדשים ושיפור השירותים הניתנים ללקוחותיהם.',
-    'audiences.professional': 'בעלי מקצוע: שצריכים להתעדכן בכלי ה-AI המתקדמים ביותר ולשלב אותם בשגרת עבודתם.',
-    'audiences.growth': 'חברות בצמיחה: השואפים לנצל את הטכנולוגיות הבינה המלאכותית לצמיחה עסקית, פיתוח מוצרים חדשים ושיפור השירותים הניתנים ללקוחותיהם.',
-    'audiences.personal': 'אנשים פרטיים: המעוניינים לשפר את הפרודוקטיביות האישית שלהם, להשתמש ב-AI ככלי עזר יומיומי ולשלב בתהליכים ופעילויות וחזותיות.',
+    'audiences.title': 'למי זה מתאים?',
+    'audiences.intro': 'ההדרכות והייעוץ מיועדים למגוון רחב של קהלים המעוניינים לרתום את כוחה של הבינה המלאכותית לטובתם:',
+    'audiences.business.title': 'עסקים וארגונים',
+    'audiences.business.desc': 'המעוניינים להטמיע פתרונות AI חדשניים בתהליכי העבודה שלהם ולייעל פעילויות שונות.',
+    'audiences.teams.title': 'צוותים מקצועיים',
+    'audiences.teams.desc': 'הנצרכים להתעדכן בכלי ה-AI המתקדמים ביותר ולשלב אותם ביעילות בשגרת עבודתם.',
+    'audiences.entrepreneurs.title': 'יזמים ועצמאיים',
+    'audiences.entrepreneurs.desc': 'השואפים למנף את טכנולוגיות הבינה המלאכותית לצמיחה עסקית, פיתוח מוצרים חדשים ושיפור השירותים הניתנים ללקוחותיהם.',
+    'audiences.personal.title': 'אנשים פרטיים',
+    'audiences.personal.desc': 'המעוניינים לשפר את הפרודוקטיביות האישית שלהם, לייעל משימות חוזרות וסיזיפיות ולהשתמש ב-AI ככלי עזר יומיומי בקלות ובטבעיות.',
+    
+    // CTA
+    'cta.title': 'רוצה לבדוק איך GenAI יכול לעבוד בשבילך?',
+    'cta.button': 'קבע ייעוץ GenAI חינם',
     
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
@@ -102,16 +117,31 @@ const translations: Record<Language, Record<string, string>> = {
     // Tools
     'tools.title': 'Tools & Expertise',
     
-    // CTA
-    'cta.title': 'Want to see how GenAI can work for you?',
-    'cta.subtitle': 'Training and consulting focus on making a wide range of AI tools accessible to businesses:',
-    'cta.button': 'Schedule Free GenAI Consultation',
+    // Approach
+    'approach.title': 'My Approach',
+    'approach.intro': 'I believe in learning by doing - every training includes hands-on practice on real cases from work or daily life. I adapt my teaching method to each audience\'s knowledge level, from non-technical people to experienced developers. The emphasis is on immediate implementation - participants learn exactly how to use AI tools to save time, improve outputs and boost personal and organizational productivity measurably.',
+    'approach.learning.title': 'Learning by Doing',
+    'approach.learning.desc': 'Hands-on practice on real cases from work and daily life.',
+    'approach.personalized.title': 'Personalized Approach',
+    'approach.personalized.desc': 'Teaching method adapted to the knowledge level and unique needs of each audience.',
+    'approach.results.title': 'Immediate Implementation & Measurable Results',
+    'approach.results.desc': 'Practical use of tools to save time, improve outputs and boost productivity.',
     
     // Target Audiences
-    'audiences.business': 'Growing Businesses: Looking to leverage AI technologies for business growth, new product development and improving services to customers.',
-    'audiences.professional': 'Professionals: Who need to stay updated with the most advanced AI tools and integrate them into their work routine.',
-    'audiences.growth': 'Growth Companies: Aspiring to leverage AI technologies for business growth, new product development and improving services to customers.',
-    'audiences.personal': 'Individuals: Looking to improve personal productivity, use AI as a daily helper and integrate into processes and visual activities.',
+    'audiences.title': 'Who Is This For?',
+    'audiences.intro': 'Training and consulting are designed for a wide range of audiences looking to harness the power of AI for their benefit:',
+    'audiences.business.title': 'Businesses & Organizations',
+    'audiences.business.desc': 'Looking to implement innovative AI solutions in their workflows and streamline various activities.',
+    'audiences.teams.title': 'Professional Teams',
+    'audiences.teams.desc': 'Who need to stay updated with the most advanced AI tools and integrate them effectively into their work routine.',
+    'audiences.entrepreneurs.title': 'Entrepreneurs & Freelancers',
+    'audiences.entrepreneurs.desc': 'Aspiring to leverage AI technologies for business growth, new product development and improving services to customers.',
+    'audiences.personal.title': 'Individuals',
+    'audiences.personal.desc': 'Looking to improve personal productivity, streamline repetitive tasks and use AI as a daily helper easily and naturally.',
+    
+    // CTA
+    'cta.title': 'Want to see how GenAI can work for you?',
+    'cta.button': 'Schedule Free GenAI Consultation',
     
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
