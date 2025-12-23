@@ -18,8 +18,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'צור קשר',
     
     // Hero
-    'hero.title': 'GenAI Consulting שמייצר תוצאות עסקיות',
-    'hero.subtitle': 'ייעוץ, הדרכה והטמעה של בינה מלאכותית יוצרת – להפוך את החלום למציאות',
+    'hero.title': 'GenAI Consulting מלווה אתכם לעולם הבינה המלאכותית',
+    'hero.subtitle': 'ייעוץ, הדרכה והטמעה של בינה מלאכותית יוצרת – ללקוחות פרטיים ולעסקים',
     'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
     'hero.cta.tagline': 'אני כאן כדי לעזור לכם לאמץ את הבינה המלאכותית – בקלות ובביטחון',
@@ -96,8 +96,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': 'GenAI Consulting that Delivers Business Results',
-    'hero.subtitle': 'Consulting, training and implementation of generative AI – turning dreams into reality',
+    'hero.title': 'GenAI Consulting Guides You to the World of AI',
+    'hero.subtitle': 'Consulting, training and implementation of generative AI – for individuals and businesses',
     'hero.cta.whatsapp': 'Free GenAI Discovery Call',
     'hero.cta.linkedin': 'LinkedIn',
     'hero.cta.tagline': "I'm here to help you embrace AI – easily and confidently",
