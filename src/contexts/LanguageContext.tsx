@@ -19,7 +19,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.title': 'GenAI Consulting שמייצר תוצאות עסקיות',
-    'hero.subtitle': 'ייעוץ, תכנון והטמעה של בינה מלאכותית יוצרת – מהחזון ועד הביצוע',
+    'hero.subtitle': 'ייעוץ, הדרכה והטמעה של בינה מלאכותית יוצרת – להפוך את החלום למציאות',
     'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
     
@@ -96,7 +96,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.title': 'GenAI Consulting that Delivers Business Results',
-    'hero.subtitle': 'Consulting, planning and implementation of generative AI – from vision to execution',
+    'hero.subtitle': 'Consulting, training and implementation of generative AI – turning dreams into reality',
     'hero.cta.whatsapp': 'Free GenAI Discovery Call',
     'hero.cta.linkedin': 'LinkedIn',
     
