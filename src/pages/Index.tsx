@@ -13,6 +13,7 @@ const ToolsSection = lazy(() => import('@/components/landing/ToolsSection'));
 const TestimonialsSection = lazy(() => import('@/components/landing/TestimonialsSection'));
 const AudiencesSection = lazy(() => import('@/components/landing/AudiencesSection'));
 const CTASection = lazy(() => import('@/components/landing/CTASection'));
+const NewsletterCTASection = lazy(() => import('@/components/landing/NewsletterCTASection'));
 
 const SectionLoader = () => (
   <div className="py-24 flex items-center justify-center">
@@ -29,8 +30,8 @@ const LandingContent = () => {
   }, [isRTL, language]);
 
   const metaTitle = language === 'he' 
-    ? 'GenAI-R | מתן רטצר - ייעוץ GenAI ובינה מלאכותית לעסקים'
-    : 'GenAI-R | Matan Retzer - GenAI Consulting for Business';
+    ? 'GenAI Consulting | מלווה אתכם לעידן הבינה המלאכותית'
+    : 'GenAI Consulting | Guiding You to the AI Era';
   
   const metaDescription = language === 'he'
     ? 'ייעוץ GenAI מקצועי לעסקים. מתן רטצר - יועץ בינה מלאכותית עם ניסיון מעשי בהטמעת AI, סוכני AI, הדרכות וסדנאות. קבלו ייעוץ חינם.'
@@ -93,6 +94,9 @@ const LandingContent = () => {
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <AudiencesSection />
+          </Suspense>
+          <Suspense fallback={<SectionLoader />}>
+            <NewsletterCTASection />
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <CTASection />
