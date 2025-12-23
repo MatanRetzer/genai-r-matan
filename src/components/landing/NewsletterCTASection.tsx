@@ -70,7 +70,7 @@ const NewsletterCTASection = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section id="newsletter" className="py-16 md:py-20 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
       
