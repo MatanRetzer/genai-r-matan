@@ -12,7 +12,7 @@ const NewsletterCTASection = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const WHATSAPP_NUMBER = '972524538121';
+  const YOUR_EMAIL = 'matan.retzer@genai-r.com';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,26 +39,28 @@ const NewsletterCTASection = () => {
 
     setIsSubmitting(true);
 
-    // Create WhatsApp message with subscriber details
-    const message = `🎉 נרשם חדש לקהילת mAgIc!
+    // Create mailto link with subscriber details
+    const subject = encodeURIComponent('הרשמה לקהילת mAgIc - ניוזלטר');
+    const body = encodeURIComponent(`שלום מתן,
+
+אני מעוניין/ת להצטרף לקהילת mAgIc ולקבל את הניוזלטר החודשי עם עדכונים חמים על יכולות AI לשיפור הפרודקטיביות.
 
 שם: ${name.trim()}
 אימייל: ${email.trim()}
 
-הנרשם מעוניין לקבל את הניוזלטר החודשי עם עדכונים חמים על יכולות AI לשיפור הפרודקטיביות.`;
+תודה!`);
 
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    const mailtoUrl = `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;
     
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
+    // Open email client
+    window.location.href = mailtoUrl;
 
     // Show success message
     toast({
-      title: isRTL ? 'תודה! 🎉' : 'Thank you! 🎉',
+      title: isRTL ? 'נפתח המייל שלך! 📧' : 'Your email opened! 📧',
       description: isRTL 
-        ? 'עברת לוואטסאפ להשלמת ההרשמה. שלח את ההודעה ונצרף אותך לקהילה!' 
-        : 'You were redirected to WhatsApp to complete signup. Send the message to join!',
+        ? 'שלח את המייל כדי להשלים את ההרשמה לקהילת mAgIc' 
+        : 'Send the email to complete your mAgIc community signup',
     });
 
     // Reset form
