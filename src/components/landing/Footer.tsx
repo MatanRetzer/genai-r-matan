@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Mail, Linkedin, MessageCircle } from 'lucide-react';
+import { Mail, Linkedin, MessageCircle, Phone } from 'lucide-react';
 
 const Footer = () => {
   const { t, isRTL } = useLanguage();
@@ -19,6 +19,14 @@ const Footer = () => {
             >
               <Mail className="w-4 h-4" />
               <span>matan.retzer@genai-r.com</span>
+            </a>
+            
+            <a 
+              href="tel:+972524538121" 
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+            >
+              <Phone className="w-4 h-4" />
+              <span>052-453-8121</span>
             </a>
             
             <a 
