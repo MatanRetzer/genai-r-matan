@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Linkedin } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import logo from '@/assets/logo.png';
 
 const HeroSection = () => {
   const { t, isRTL } = useLanguage();
@@ -33,6 +34,13 @@ const HeroSection = () => {
 
       <div className="container relative z-20 mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">
+          {/* Logo above headline */}
+          <img 
+            src={logo} 
+            alt="GenAI-R Logo" 
+            className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 drop-shadow-lg"
+          />
+          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             <span className="text-gradient">{t('hero.title')}</span>
           </h1>
