@@ -13,6 +13,10 @@ const ToolsSection = () => {
     'Vibe Coding / BASE44',
   ];
 
+  const description = isRTL 
+    ? 'המטרה המרכזית של כל הדרכה היא להבטיח שכל מדרג יוכל לצאת עם היכולת להשתמש בכלי אלה בקלות ובטבעיות, לשלב בעבודה וביום-יום בפעילויות, ובכך לקסום את הפרודוקטיביות שלו.'
+    : 'The central goal of every training is to ensure that every level can leave with the ability to use these tools easily and naturally, integrate them into work and daily activities, and thereby maximize their productivity.';
+
   return (
     <section id="tools" className="py-24 relative" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background glow */}
@@ -23,7 +27,7 @@ const ToolsSection = () => {
           {t('tools.title')}
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-8">
           {tools.map((tool, index) => (
             <div
               key={index}
@@ -35,6 +39,10 @@ const ToolsSection = () => {
             </div>
           ))}
         </div>
+        
+        <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          {description}
+        </p>
       </div>
     </section>
   );
