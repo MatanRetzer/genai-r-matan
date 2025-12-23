@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Linkedin } from 'lucide-react';
+import { MessageCircle, Linkedin, Sparkles } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import logo from '@/assets/logo.png';
 
@@ -63,9 +63,19 @@ const HeroSection = () => {
             </Button>
             
             <Button
-              variant="outline"
               size="lg"
+              variant="outline"
               className="border-primary/50 hover:bg-primary/10 hover:border-primary text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 gap-2 order-2 w-full sm:w-auto"
+              onClick={() => document.getElementById('newsletter')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Sparkles className="w-5 h-5" />
+              {isRTL ? 'הצטרפו לקהילה' : 'Join Community'}
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="lg"
+              className="hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 gap-2 order-3 w-full sm:w-auto"
               asChild
             >
               <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
