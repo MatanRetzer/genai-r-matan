@@ -75,9 +75,21 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <p className="text-muted-foreground text-base sm:text-lg mt-6 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-primary font-medium text-lg sm:text-xl md:text-2xl mt-8 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             {t('hero.cta.tagline')}
           </p>
+
+          {/* Scroll indicator */}
+          <div className="mt-12 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <div className="flex flex-col items-center gap-2 cursor-pointer group" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+              <span className="text-muted-foreground text-sm group-hover:text-primary transition-colors">
+                {isRTL ? 'גלול למטה' : 'Scroll down'}
+              </span>
+              <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center group-hover:border-primary transition-colors">
+                <div className="w-1.5 h-3 bg-primary rounded-full mt-2 animate-bounce" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
