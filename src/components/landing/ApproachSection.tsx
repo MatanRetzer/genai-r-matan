@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { BookOpen, UserCheck, Zap } from 'lucide-react';
+import AnimatedSection from './AnimatedSection';
 
 const ApproachSection = () => {
   const { t, isRTL } = useLanguage();
@@ -23,32 +24,35 @@ const ApproachSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-card/30" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section className="py-16 md:py-20 bg-card/30" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gradient">
-          {t('approach.title')}
-        </h2>
+        <AnimatedSection>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-gradient">
+            {t('approach.title')}
+          </h2>
+        </AnimatedSection>
         
-        <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-          {t('approach.intro')}
-        </p>
+        <AnimatedSection delay={100}>
+          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed text-sm md:text-base px-4">
+            {t('approach.intro')}
+          </p>
+        </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto">
           {approaches.map((item, index) => (
-            <div
-              key={index}
-              className="group text-center p-6 rounded-xl border border-border/50 bg-background/50 hover:border-primary/30 transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <item.icon className="w-6 h-6 text-primary" />
+            <AnimatedSection key={index} delay={200 + index * 100}>
+              <div className="group text-center p-5 md:p-6 rounded-xl border border-border/50 bg-background/50 hover:border-primary/30 transition-all duration-300 h-full">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-base md:text-lg font-semibold mb-2 text-foreground">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {item.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-foreground">
-                {item.title}
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                {item.description}
-              </p>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>
