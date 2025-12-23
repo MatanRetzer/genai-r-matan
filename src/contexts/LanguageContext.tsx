@@ -18,11 +18,11 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'צור קשר',
     
     // Hero
-    'hero.title': 'GenAI Consulting שמייצר תוצאות עסקיות',
-    'hero.subtitle': 'ייעוץ, הדרכה והטמעה של בינה מלאכותית יוצרת – להפוך את החלום למציאות',
+    'hero.title': 'GenAI Consulting | ייעוץ, הטמעה והדרכה לעסקים ופרטיים',
+    'hero.subtitle': 'אני כאן כדי לעזור לכם להשתמש בכלי הבינה המלאכותית ביעילות בחיי היומיום ובעבודה',
     'hero.cta.whatsapp': 'שיחת איפיון GenAI חינם',
     'hero.cta.linkedin': 'LinkedIn',
-    'hero.cta.tagline': 'אני כאן כדי לעזור לכם לאמץ את הבינה המלאכותית – בקלות ובביטחון',
+    'hero.cta.tagline': '',
     
     // About
     'about.title': 'מי אני',
