@@ -3,6 +3,12 @@ import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
+
 const CTASection = () => {
   const { t, isRTL } = useLanguage();
 
@@ -26,12 +32,19 @@ const CTASection = () => {
             <Button
               size="lg"
               className="animate-glow-pulse text-base md:text-lg px-8 md:px-10 py-5 md:py-6 gap-2 md:gap-3 w-full sm:w-auto"
-              asChild
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'whatsapp_click', {
+                    event_category: 'Contact',
+                    event_label: 'CTA Section',
+                    value: 1
+                  });
+                }
+                window.open(WHATSAPP_LINK, '_blank', 'noopener,noreferrer');
+              }}
             >
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
-                {t('cta.button')}
-              </a>
+              <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
+              {t('cta.button')}
             </Button>
           </div>
         </AnimatedSection>
