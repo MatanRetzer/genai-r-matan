@@ -4,6 +4,12 @@ import { MessageCircle, Linkedin, Sparkles } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import logo from '@/assets/logo.png';
 
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
+
 const HeroSection = () => {
   const { t, isRTL } = useLanguage();
 
@@ -76,12 +82,19 @@ const HeroSection = () => {
               variant="ghost"
               size="lg"
               className="hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 gap-2 order-3 w-full sm:w-auto"
-              asChild
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'linkedin_click', {
+                    event_category: 'Social',
+                    event_label: 'Hero Section LinkedIn Button',
+                    value: 1
+                  });
+                }
+                window.open(LINKEDIN_LINK, '_blank', 'noopener,noreferrer');
+              }}
             >
-              <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-5 h-5" />
-                {t('hero.cta.linkedin')}
-              </a>
+              <Linkedin className="w-5 h-5" />
+              {t('hero.cta.linkedin')}
             </Button>
           </div>
 
