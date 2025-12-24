@@ -60,12 +60,19 @@ const HeroSection = () => {
             <Button
               size="lg"
               className="glow-box hover:glow-box-strong transition-all duration-300 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 gap-2 order-1 w-full sm:w-auto"
-              asChild
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'whatsapp_click', {
+                    event_category: 'Contact',
+                    event_label: 'Hero Section',
+                    value: 1
+                  });
+                }
+                window.open(WHATSAPP_LINK, '_blank', 'noopener,noreferrer');
+              }}
             >
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
-                {t('hero.cta.whatsapp')}
-              </a>
+              <MessageCircle className="w-5 h-5" />
+              {t('hero.cta.whatsapp')}
             </Button>
             
             <Button

@@ -1,8 +1,24 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Linkedin, MessageCircle, Phone } from 'lucide-react';
 
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
+
 const Footer = () => {
   const { t, isRTL } = useLanguage();
+
+  const handleWhatsAppClick = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'whatsapp_click', {
+        event_category: 'Contact',
+        event_label: 'Footer',
+        value: 1
+      });
+    }
+  };
 
   return (
     <footer className="py-8 border-t border-border" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -44,6 +60,7 @@ const Footer = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+              onClick={handleWhatsAppClick}
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
