@@ -79,7 +79,16 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="border-primary/50 hover:bg-primary/10 hover:border-primary text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 gap-2 order-2 w-full sm:w-auto"
-              onClick={() => document.getElementById('newsletter')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'join_community_click', {
+                    event_category: 'Engagement',
+                    event_label: 'Hero Section',
+                    value: 1
+                  });
+                }
+                document.getElementById('newsletter')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               <Sparkles className="w-5 h-5" />
               {isRTL ? 'הצטרפו לקהילה' : 'Join Community'}
