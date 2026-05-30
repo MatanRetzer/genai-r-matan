@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { MessageCircle, Loader2, Send } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
@@ -25,6 +25,26 @@ const CTASection = () => {
   const isHe = isRTL;
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'contact_form_view', {
+            event_category: 'Contact',
+            event_label: 'CTA Section',
+            value: 1,
+          });
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   const schema = z.object({
     name: z.string().trim().min(1).max(100),
@@ -76,7 +96,7 @@ const CTASection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-24 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section ref={sectionRef} id="contact" className="py-20 md:py-24 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background effects */}
       <div className="absolute inset-0 bg-hero-pattern" />
       <div className="absolute top-0 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-primary/10 rounded-full blur-[80px]" />
