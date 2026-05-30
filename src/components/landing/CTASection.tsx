@@ -25,6 +25,26 @@ const CTASection = () => {
   const isHe = isRTL;
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'contact_form_view', {
+            event_category: 'Contact',
+            event_label: 'CTA Section',
+            value: 1,
+          });
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   const schema = z.object({
     name: z.string().trim().min(1).max(100),
