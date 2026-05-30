@@ -96,7 +96,7 @@ const CTASection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-24 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section ref={sectionRef} id="contact" className="py-20 md:py-24 relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background effects */}
       <div className="absolute inset-0 bg-hero-pattern" />
       <div className="absolute top-0 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-primary/10 rounded-full blur-[80px]" />
