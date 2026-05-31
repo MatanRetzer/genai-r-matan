@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 import { Mail, Linkedin, MessageCircle, Phone } from 'lucide-react';
 
 declare global {
@@ -27,7 +28,13 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold text-gradient">GenAI-R</span>
           </div>
-          
+
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            <Link to="/courses" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              {t('nav.courses')}
+            </Link>
+          </div>
+
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <a 
               href="mailto:matan.retzer@genai-r.com" 
