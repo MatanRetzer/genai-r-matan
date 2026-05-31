@@ -10,6 +10,7 @@ import { courses } from '@/data/courses';
 
 const CourseSyllabus = lazy(() => import('@/components/courses/CourseSyllabus'));
 const CourseFormats = lazy(() => import('@/components/courses/CourseFormats'));
+const CoursesWhy = lazy(() => import('@/components/courses/CoursesWhy'));
 const TestimonialsSection = lazy(() => import('@/components/landing/TestimonialsSection'));
 const NewsletterCTASection = lazy(() => import('@/components/landing/NewsletterCTASection'));
 const CTASection = lazy(() => import('@/components/landing/CTASection'));
