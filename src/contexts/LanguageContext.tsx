@@ -15,6 +15,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.about': 'מי אני',
     'nav.services': 'שירותים',
     'nav.tools': 'כלים',
+    'nav.courses': 'קורסים',
     'nav.contact': 'צור קשר',
     
     // Hero
@@ -84,7 +85,31 @@ const translations: Record<Language, Record<string, string>> = {
     // CTA
     'cta.title': 'רוצה לבדוק איך GenAI יכול לעבוד בשבילך?',
     'cta.button': 'שיחת איפיון GenAI חינם',
-    
+
+    // Courses page
+    'courses.hero.title': 'קורסים והדרכות GenAI',
+    'courses.hero.subtitle': 'תוכניות מעשיות שמכניסות בינה מלאכותית לעבודה היומית – למנהלים, צוותים ועצמאיים.',
+    'courses.hero.cta': 'שיחת איפיון GenAI חינם',
+    'courses.audiences.title': 'למי הקורסים מיועדים?',
+    'courses.audiences.managers': 'מנהלים ובעלי תפקידים',
+    'courses.audiences.teams': 'צוותים וארגונים',
+    'courses.audiences.individuals': 'יזמים ועצמאיים',
+    'courses.grid.title': 'מגוון הקורסים',
+    'courses.card.duration': 'משך',
+    'courses.card.level': 'רמה',
+    'courses.card.format': 'פורמט',
+    'courses.card.cta': 'פרטים והרשמה',
+    'courses.syllabus.title': 'סילבוס מפורט',
+    'courses.syllabus.intro': 'מה כולל כל קורס – לחצו לפתיחה.',
+    'courses.formats.title': 'פורמטים של הדרכה',
+    'courses.formats.online.title': 'אונליין',
+    'courses.formats.online.desc': 'מפגשים סינכרוניים בזום, נוחים לארגונים מבוזרים.',
+    'courses.formats.inperson.title': 'פרונטלי',
+    'courses.formats.inperson.desc': 'סדנאות פנים אל פנים במשרדי הלקוח או באולמות הדרכה.',
+    'courses.formats.inhouse.title': 'In-house מותאם',
+    'courses.formats.inhouse.desc': 'תכנים מותאמים לצרכים, לכלים ולתהליכים הספציפיים של הארגון.',
+    'courses.back': 'חזרה לדף הבית',
+
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
   },
@@ -93,6 +118,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.about': 'About',
     'nav.services': 'Services',
     'nav.tools': 'Tools',
+    'nav.courses': 'Courses',
     'nav.contact': 'Contact',
     
     // Hero
@@ -162,7 +188,31 @@ const translations: Record<Language, Record<string, string>> = {
     // CTA
     'cta.title': 'Want to see how GenAI can work for you?',
     'cta.button': 'Free GenAI Discovery Call',
-    
+
+    // Courses page
+    'courses.hero.title': 'GenAI Courses & Training',
+    'courses.hero.subtitle': 'Practical programs that bring AI into daily work – for managers, teams and freelancers.',
+    'courses.hero.cta': 'Free GenAI Discovery Call',
+    'courses.audiences.title': 'Who Are the Courses For?',
+    'courses.audiences.managers': 'Managers & Leaders',
+    'courses.audiences.teams': 'Teams & Organizations',
+    'courses.audiences.individuals': 'Entrepreneurs & Freelancers',
+    'courses.grid.title': 'Course Catalog',
+    'courses.card.duration': 'Duration',
+    'courses.card.level': 'Level',
+    'courses.card.format': 'Format',
+    'courses.card.cta': 'Details & Signup',
+    'courses.syllabus.title': 'Detailed Syllabus',
+    'courses.syllabus.intro': 'What each course covers – click to expand.',
+    'courses.formats.title': 'Training Formats',
+    'courses.formats.online.title': 'Online',
+    'courses.formats.online.desc': 'Live Zoom sessions, convenient for distributed organizations.',
+    'courses.formats.inperson.title': 'In-person',
+    'courses.formats.inperson.desc': 'Face-to-face workshops at the client offices or training venues.',
+    'courses.formats.inhouse.title': 'Tailored In-house',
+    'courses.formats.inhouse.desc': 'Content tailored to the specific needs, tools and processes of the organization.',
+    'courses.back': 'Back to home',
+
     // Footer
     'footer.copyright': '© 2025 GenAI-R Consulting',
   }
