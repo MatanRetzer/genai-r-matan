@@ -21,6 +21,7 @@ export interface Course {
   level: { he: string; en: string };
   format: { he: string; en: string };
   syllabus: { he: string[]; en: string[] };
+  detailedSyllabus?: { he: string[]; en: string[] };
 }
 
 export const courses: Course[] = [
