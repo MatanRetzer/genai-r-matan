@@ -1,6 +1,7 @@
+import { useState, useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Linkedin, Sparkles } from 'lucide-react';
+import { MessageCircle, Linkedin, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.webp';
 import logo from '@/assets/logo.webp';
 
