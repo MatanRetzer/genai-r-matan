@@ -158,18 +158,29 @@ const HeroSection = () => {
                 <source src={VIDEO_URL} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              {/* Mute/Unmute Button */}
-              <button
-                onClick={toggleMute}
-                className="absolute bottom-4 right-4 z-20 p-2.5 bg-background/80 backdrop-blur-sm rounded-full border border-border/30 hover:bg-background transition-all duration-200 shadow-lg"
-                aria-label={isMuted ? 'Unmute video' : 'Mute video'}
-              >
-                {isMuted ? (
-                  <VolumeX className="w-5 h-5 text-foreground" />
-                ) : (
-                  <Volume2 className="w-5 h-5 text-primary" />
-                )}
-              </button>
+              {/* Video Controls */}
+              <div className="absolute bottom-4 right-4 z-20 flex gap-2">
+                <button
+                  onClick={restartVideo}
+                  className="p-2.5 bg-background/80 backdrop-blur-sm rounded-full border border-border/30 hover:bg-background transition-all duration-200 shadow-lg"
+                  aria-label="Restart video"
+                  title="Restart video"
+                >
+                  <RotateCcw className="w-5 h-5 text-foreground" />
+                </button>
+                <button
+                  onClick={toggleMute}
+                  className="p-2.5 bg-background/80 backdrop-blur-sm rounded-full border border-border/30 hover:bg-background transition-all duration-200 shadow-lg"
+                  aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+                  title={isMuted ? 'Unmute video' : 'Mute video'}
+                >
+                  {isMuted ? (
+                    <VolumeX className="w-5 h-5 text-foreground" />
+                  ) : (
+                    <Volume2 className="w-5 h-5 text-primary" />
+                  )}
+                </button>
+              </div>
               {/* Video overlay gradient */}
               <div className="absolute inset-0 pointer-events-none border border-border/10 rounded-3xl" />
             </div>
