@@ -10,6 +10,7 @@ import { courses } from '@/data/courses';
 
 const CourseSyllabus = lazy(() => import('@/components/courses/CourseSyllabus'));
 const CourseFormats = lazy(() => import('@/components/courses/CourseFormats'));
+const CoursesWhy = lazy(() => import('@/components/courses/CoursesWhy'));
 const TestimonialsSection = lazy(() => import('@/components/landing/TestimonialsSection'));
 const NewsletterCTASection = lazy(() => import('@/components/landing/NewsletterCTASection'));
 const CTASection = lazy(() => import('@/components/landing/CTASection'));
@@ -36,8 +37,8 @@ const CoursesContent = () => {
 
   const metaDescription =
     language === 'he'
-      ? 'קורסים מעשיים בבינה מלאכותית יוצרת: ChatGPT, Claude, AI Agents, Vibe Coding, NotebookLM ועוד. לימוד מותאם למנהלים, צוותים ועצמאיים.'
-      : 'Hands-on generative AI courses: ChatGPT, Claude, AI Agents, Vibe Coding, NotebookLM and more. Tailored for managers, teams and freelancers.';
+      ? 'קטלוג קורסים והדרכות GenAI מעשיים: יסודות AI, פרומפטים, קבלת החלטות, ניהול ידע, Gamma AI, סוכני AI, Vibe Coding ועוד. מותאם לארגונים, קיבוצים ומוסדות חינוך.'
+      : 'Practical GenAI courses and training: AI foundations, prompts, decision-making, knowledge management, Gamma AI, AI agents, Vibe Coding and more. Tailored for organizations and educational institutions.';
 
   const structuredData = courses.map((c) => ({
     '@context': 'https://schema.org',
@@ -76,6 +77,9 @@ const CoursesContent = () => {
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <CourseFormats />
+          </Suspense>
+          <Suspense fallback={<SectionLoader />}>
+            <CoursesWhy />
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
             <TestimonialsSection />
