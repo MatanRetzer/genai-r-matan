@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66KJHEJ41P"></script>
+    <!-- Google Analytics (deferred to not block first paint) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-66KJHEJ41P');
+      window.addEventListener('load', function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-66KJHEJ41P';
+        document.head.appendChild(s);
+      });
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>GenAI-R | מתן רטצר - שירותי GenAI</title>
@@ -24,6 +29,8 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
