@@ -1,8 +1,8 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Linkedin, Sparkles } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
-import logo from '@/assets/logo.png';
+import heroBg from '@/assets/hero-bg.webp';
+import logo from '@/assets/logo.webp';
 
 declare global {
   interface Window {

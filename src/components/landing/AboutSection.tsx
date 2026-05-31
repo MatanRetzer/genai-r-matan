@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import matanProfile from '@/assets/matan-profile.jpg';
+import matanProfile from '@/assets/matan-profile.webp';
 import AnimatedSection from './AnimatedSection';
 import { Brain, Code, Mic } from 'lucide-react';
 
