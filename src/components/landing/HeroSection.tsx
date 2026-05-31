@@ -1,6 +1,7 @@
+import { useState, useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Linkedin, Sparkles } from 'lucide-react';
+import { MessageCircle, Linkedin, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.webp';
 import logo from '@/assets/logo.webp';
 
@@ -12,11 +13,20 @@ declare global {
 
 const HeroSection = () => {
   const { t, isRTL } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   // Placeholder links - easily editable
   const WHATSAPP_LINK = 'https://wa.me/972524538121?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%9E%D7%AA%D7%9F%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%20%D7%94AI%20%D7%A9%D7%90%D7%AA%D7%94%20%D7%9E%D7%A6%D7%99%D7%A2.%20%D7%A0%D7%95%D7%9B%D7%9C%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%99%D7%A4%D7%99%D7%95%D7%9F%20%D7%A7%D7%A6%D7%A8%D7%94%3F';
   const LINKEDIN_LINK = 'https://www.linkedin.com/in/matan-retzer-565b2332?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhjLaBVdIT1OVDmnud42T3A%3D%3D';
   const VIDEO_URL = '/welcome-clip.mp4';
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  };
 
   return (
     <section 
@@ -131,6 +141,7 @@ const HeroSection = () => {
             
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/20">
               <video 
+                ref={videoRef}
                 className="w-full h-auto aspect-video object-cover"
                 autoPlay 
                 muted 
@@ -140,6 +151,18 @@ const HeroSection = () => {
                 <source src={VIDEO_URL} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              {/* Mute/Unmute Button */}
+              <button
+                onClick={toggleMute}
+                className="absolute bottom-4 right-4 z-20 p-2.5 bg-background/80 backdrop-blur-sm rounded-full border border-border/30 hover:bg-background transition-all duration-200 shadow-lg"
+                aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+              >
+                {isMuted ? (
+                  <VolumeX className="w-5 h-5 text-foreground" />
+                ) : (
+                  <Volume2 className="w-5 h-5 text-primary" />
+                )}
+              </button>
               {/* Video overlay gradient */}
               <div className="absolute inset-0 pointer-events-none border border-border/10 rounded-3xl" />
             </div>
