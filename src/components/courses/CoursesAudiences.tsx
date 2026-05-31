@@ -1,14 +1,14 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import AnimatedSection from '@/components/landing/AnimatedSection';
-import { Briefcase, Users, Rocket } from 'lucide-react';
+import { Briefcase, Users, User } from 'lucide-react';
 
 const CoursesAudiences = () => {
   const { t, isRTL } = useLanguage();
 
   const items = [
-    { icon: Briefcase, label: t('courses.audiences.managers') },
-    { icon: Users, label: t('courses.audiences.teams') },
-    { icon: Rocket, label: t('courses.audiences.individuals') },
+    { icon: Briefcase, title: t('courses.audiences.managers.title'), desc: t('courses.audiences.managers.desc') },
+    { icon: Users, title: t('courses.audiences.teams.title'), desc: t('courses.audiences.teams.desc') },
+    { icon: User, title: t('courses.audiences.individuals.title'), desc: t('courses.audiences.individuals.desc') },
   ];
 
   return (
@@ -19,16 +19,21 @@ const CoursesAudiences = () => {
             {t('courses.audiences.title')}
           </h2>
         </AnimatedSection>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
           {items.map((item, idx) => (
             <AnimatedSection key={idx} delay={idx * 80}>
-              <div className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <item.icon className="w-6 h-6 text-primary" />
+              <div className="flex flex-col p-5 md:p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors h-full">
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <span className="text-base md:text-lg font-semibold text-foreground">
+                    {item.title}
+                  </span>
                 </div>
-                <span className="text-base md:text-lg font-medium text-foreground">
-                  {item.label}
-                </span>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             </AnimatedSection>
           ))}
