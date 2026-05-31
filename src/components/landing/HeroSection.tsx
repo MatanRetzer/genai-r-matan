@@ -28,6 +28,13 @@ const HeroSection = () => {
     }
   };
 
+  const restartVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play();
+    }
+  };
+
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
