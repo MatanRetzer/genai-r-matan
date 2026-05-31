@@ -57,6 +57,22 @@ export const courses: Course[] = [
         'Privacy, ethics and responsible use',
       ],
     },
+    detailedSyllabus: {
+      he: [
+        'מבוא לעולם ה-AI',
+        'סוגי מודלים וכלים',
+        'שימושים ארגוניים',
+        'פרטיות ואתיקה',
+        'תרגול מעשי',
+      ],
+      en: [
+        'Introduction to the world of AI',
+        'Types of models and tools',
+        'Organizational use cases',
+        'Privacy and ethics',
+        'Hands-on practice',
+      ],
+    },
   },
   {
     id: 'prompt-engineering',
@@ -88,6 +104,20 @@ export const courses: Course[] = [
         'Writing emails and documents',
         'Meeting summaries and minutes',
         'Tailoring messages for different audiences',
+      ],
+    },
+    detailedSyllabus: {
+      he: [
+        'עקרונות Prompt Engineering',
+        'כתיבה, שכתוב ועריכה',
+        'סיכומים ודוחות',
+        'בניית ספריית פרומפטים',
+      ],
+      en: [
+        'Prompt Engineering principles',
+        'Writing, rewriting and editing',
+        'Summaries and reports',
+        'Building a prompt library',
       ],
     },
   },
@@ -125,6 +155,24 @@ export const courses: Course[] = [
         '"Devil\'s advocate" and assumption testing',
         'Simulations with stakeholders',
         'Building support for strategic decisions',
+      ],
+    },
+    detailedSyllabus: {
+      he: [
+        'איסוף מידע וניתוח נתונים',
+        'בנצ\'מרקים והשוואות',
+        'פיתוח חלופות',
+        'חשיבה ביקורתית',
+        'סימולציות מול בעלי עניין',
+        'בניית תוכנית פעולה',
+      ],
+      en: [
+        'Information gathering and data analysis',
+        'Benchmarks and comparisons',
+        'Developing alternatives',
+        'Critical thinking',
+        'Simulations with stakeholders',
+        'Building an action plan',
       ],
     },
   },
@@ -228,6 +276,20 @@ export const courses: Course[] = [
         'Generating managerial insights',
       ],
     },
+    detailedSyllabus: {
+      he: [
+        'ניתוח קבצים ודוחות',
+        'זיהוי מגמות',
+        'גרפים ודשבורדים',
+        'קבלת החלטות מבוססת נתונים',
+      ],
+      en: [
+        'Analyzing files and reports',
+        'Identifying trends',
+        'Charts and dashboards',
+        'Data-driven decision-making',
+      ],
+    },
   },
   {
     id: 'gamma-ai',
@@ -267,6 +329,26 @@ export const courses: Course[] = [
         'Combined workflow with ChatGPT and additional AI tools',
       ],
     },
+    detailedSyllabus: {
+      he: [
+        'היכרות עם סביבת Gamma',
+        'בניית מצגות באמצעות AI',
+        'יצירת מסמכים ודפי מידע',
+        'Storytelling עסקי וקהילתי',
+        'שילוב נתונים ותרשימים',
+        'עיצוב מהיר ואפקטיבי',
+        'הפקת תוצרים מוכנים לשימוש',
+      ],
+      en: [
+        'Getting to know the Gamma environment',
+        'Building presentations with AI',
+        'Creating documents and info pages',
+        'Business and community storytelling',
+        'Integrating data and charts',
+        'Fast and effective design',
+        'Producing ready-to-use deliverables',
+      ],
+    },
   },
   {
     id: 'ai-agents',
@@ -298,6 +380,20 @@ export const courses: Course[] = [
         'Organizational automation',
         'Workflows',
         'Recurring processes and task optimization',
+      ],
+    },
+    detailedSyllabus: {
+      he: [
+        'בניית סוכנים',
+        'תהליכי אוטומציה',
+        'ניהול משימות',
+        'שיפור תהליכים',
+      ],
+      en: [
+        'Building agents',
+        'Automation processes',
+        'Task management',
+        'Process improvement',
       ],
     },
   },
@@ -333,6 +429,20 @@ export const courses: Course[] = [
         'Product specification',
         'Building prototypes',
         'Developing digital tools',
+      ],
+    },
+    detailedSyllabus: {
+      he: [
+        'פיתוח ללא קוד',
+        'אפיון פתרונות',
+        'בניית אפליקציות',
+        'יצירת MVP',
+      ],
+      en: [
+        'No-code development',
+        'Solution specification',
+        'Building applications',
+        'Creating an MVP',
       ],
     },
   },
