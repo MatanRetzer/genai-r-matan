@@ -79,6 +79,9 @@ const CoursesContent = () => {
             <CourseFormats />
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
+            <CoursesWhy />
+          </Suspense>
+          <Suspense fallback={<SectionLoader />}>
             <TestimonialsSection />
           </Suspense>
           <Suspense fallback={<SectionLoader />}>
